@@ -237,7 +237,3 @@ Smart algorithm that:
 
 ---
 
-<div align="center">
-  <p>Made with ❤️ for efficient inventory management</p>
-  <p>⭐ Star this repo if you find it useful!</p>
-</div>
