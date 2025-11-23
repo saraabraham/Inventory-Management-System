@@ -2,6 +2,13 @@ import axios from 'axios';
 
 const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5174/api';
 
+const api = axios.create({
+    baseURL: API_BASE_URL,
+    headers: {
+        'Content-Type': 'application/json',
+    },
+});
+
 export interface Product {
     id: number;
     sku: string;
@@ -17,7 +24,6 @@ export interface Product {
     isLowStock: boolean;
     isActive: boolean;
     imageUrl?: string;
-
 }
 
 export interface CreateProductDto {
@@ -31,15 +37,7 @@ export interface CreateProductDto {
     supplierId: number;
     location: string;
     imageUrl?: string;
-
 }
-
-const api = axios.create({
-    baseURL: API_BASE_URL,
-    headers: {
-        'Content-Type': 'application/json',
-    },
-});
 
 export const productService = {
     getAll: () => api.get<Product[]>('/products'),
