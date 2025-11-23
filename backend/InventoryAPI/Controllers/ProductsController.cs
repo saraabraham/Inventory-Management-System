@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using InventoryAPI.Models;
 using InventoryAPI.DTOs;
 using InventoryAPI.Repositories;
+using System.Text;
 
 namespace InventoryAPI.Controllers
 {
@@ -185,6 +186,25 @@ namespace InventoryAPI.Controllers
             }
 
             return NoContent();
+        }
+
+        [HttpGet("export")]
+        public async Task<IActionResult> ExportProducts()
+        {
+            var products = await _productRepository.GetAllAsync();
+
+            var csv = new StringBuilder();
+            csv.AppendLine("SKU,Name,Category,Price,Stock,Minimum Stock,Supplier,Location,Status");
+
+            foreach (var product in products)
+            {
+                csv.AppendLine($"{product.SKU},{product.Name},{product.Category},{product.Price}," +
+                              $"{product.StockQuantity},{product.MinimumStock},{product.Supplier?.Name}," +
+                              $"{product.Location},{(product.IsActive ? "Active" : "Inactive")}");
+            }
+
+            var bytes = Encoding.UTF8.GetBytes(csv.ToString());
+            return File(bytes, "text/csv", $"inventory-export-{DateTime.Now:yyyyMMdd}.csv");
         }
     }
 }

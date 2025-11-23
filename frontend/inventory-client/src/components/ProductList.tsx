@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Product, productService } from '../services/api';
 import { Plus, Edit, Trash2, Package, Search } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { Download } from 'lucide-react';
+import axios from 'axios';
 
 const ProductList: React.FC = () => {
     const [products, setProducts] = useState<Product[]>([]);
@@ -55,6 +57,25 @@ const ProductList: React.FC = () => {
         }
     };
 
+    const handleExport = async () => {
+        try {
+            const response = await axios.get('http://localhost:5174/api/products/export', {
+                responseType: 'blob'
+            });
+
+            const url = window.URL.createObjectURL(new Blob([response.data]));
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute('download', `inventory-${new Date().toISOString().split('T')[0]}.csv`);
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+        } catch (error) {
+            console.error('Error exporting:', error);
+            alert('Failed to export data');
+        }
+    };
+
     if (loading) {
         return <div className="flex justify-center items-center h-64">Loading...</div>;
     }
@@ -69,6 +90,13 @@ const ProductList: React.FC = () => {
                 >
                     <Plus className="w-5 h-5 mr-2" />
                     Add Product
+                </button>
+                <button
+                    onClick={handleExport}
+                    className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 flex items-center mr-3"
+                >
+                    <Download className="w-5 h-5 mr-2" />
+                    Export CSV
                 </button>
             </div>
 
