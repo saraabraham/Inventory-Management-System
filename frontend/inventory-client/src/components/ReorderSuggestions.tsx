@@ -31,7 +31,7 @@ const ReorderSuggestions: React.FC = () => {
 
     const loadSuggestions = async () => {
         try {
-            const response = await axios.get(`${process.env.REACT_APP_API_URL}/reorder-suggestions`);
+            const response = await axios.get(`${process.env.REACT_APP_API_URL}//products/reorder-suggestions`);
             setSuggestions(response.data);
         } catch (error) {
             console.error('Error loading suggestions:', error);
