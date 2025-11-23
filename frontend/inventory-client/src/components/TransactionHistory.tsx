@@ -27,7 +27,7 @@ const TransactionHistory: React.FC = () => {
 
     const loadTransactions = async () => {
         try {
-            const response = await axios.get('http://localhost:5174/api/transactions');
+            const response = await axios.get(`${process.env.REACT_APP_API_URL}/transactions`);
             setTransactions(response.data);
         } catch (error) {
             console.error('Error loading transactions:', error);

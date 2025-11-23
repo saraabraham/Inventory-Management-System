@@ -1,8 +1,15 @@
 /Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/publish/InventoryAPI
+/Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/publish/publish/web.config
 /Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/publish/appsettings.Development.json
 /Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/publish/appsettings.json
 /Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/publish/package-lock.json
 /Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/publish/package.json
+/Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/publish/publish/appsettings.Development.json
+/Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/publish/publish/appsettings.json
+/Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/publish/publish/InventoryAPI.deps.json
+/Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/publish/publish/InventoryAPI.runtimeconfig.json
+/Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/publish/publish/package-lock.json
+/Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/publish/publish/package.json
 /Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/publish/InventoryAPI.dll
 /Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/publish/InventoryAPI.runtimeconfig.json
 /Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/publish/InventoryAPI.pdb

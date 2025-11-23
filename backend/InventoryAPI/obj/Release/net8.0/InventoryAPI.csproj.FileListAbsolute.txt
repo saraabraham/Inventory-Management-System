@@ -146,3 +146,10 @@
 /Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/obj/Release/net8.0/InventoryAPI.pdb
 /Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/obj/Release/net8.0/InventoryAPI.genruntimeconfig.cache
 /Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/obj/Release/net8.0/ref/InventoryAPI.dll
+/Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/bin/Release/net8.0/publish/web.config
+/Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/bin/Release/net8.0/publish/appsettings.Development.json
+/Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/bin/Release/net8.0/publish/appsettings.json
+/Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/bin/Release/net8.0/publish/InventoryAPI.deps.json
+/Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/bin/Release/net8.0/publish/InventoryAPI.runtimeconfig.json
+/Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/bin/Release/net8.0/publish/package-lock.json
+/Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/bin/Release/net8.0/publish/package.json
