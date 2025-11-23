@@ -6,6 +6,7 @@ import ProductList from './components/ProductList';
 import ProductForm from './components/ProductForm';
 import TransactionHistory from './components/TransactionHistory';
 import { History } from 'lucide-react';
+import ProductDetails from './components/ProductDetails';
 
 function App() {
 
@@ -55,6 +56,7 @@ function App() {
             <Route path="/products/new" element={<ProductForm />} />
             <Route path="/products/edit/:id" element={<ProductForm />} />
             <Route path="/transactions" element={<TransactionHistory />} />
+            <Route path="/products/:id/details" element={<ProductDetails />} />
           </Routes>
         </main>
       </div>

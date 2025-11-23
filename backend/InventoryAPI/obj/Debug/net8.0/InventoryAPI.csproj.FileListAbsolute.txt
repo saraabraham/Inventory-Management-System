@@ -135,3 +135,5 @@
 /Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/obj/Debug/net8.0/InventoryAPI.pdb
 /Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/obj/Debug/net8.0/InventoryAPI.genruntimeconfig.cache
 /Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/obj/Debug/net8.0/ref/InventoryAPI.dll
+/Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/bin/Debug/net8.0/package-lock.json
+/Users/sara_abraham/Inventory-Management/ikea-inventory-system/backend/InventoryAPI/bin/Debug/net8.0/package.json

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Product, productService } from '../services/api';
-import { Plus, Edit, Trash2, Search, Upload, Download } from 'lucide-react';
+import { Plus, Edit, Trash2, Search, Upload, Download, Eye } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import BulkImport from './BulkImport';
@@ -330,6 +330,7 @@ const ProductList: React.FC = () => {
                                                 {product.stockQuantity}
                                             </span>
                                             <div className="flex space-x-1">
+
                                                 <button
                                                     onClick={() => handleStockAdjustment(product.id, 1)}
                                                     className="text-green-600 hover:text-green-800 text-xs font-semibold px-2 py-1 border border-green-600 rounded hover:bg-green-50"
@@ -345,6 +346,7 @@ const ProductList: React.FC = () => {
                                                 >
                                                     -
                                                 </button>
+
                                             </div>
                                         </div>
                                     </td>
@@ -366,6 +368,12 @@ const ProductList: React.FC = () => {
                                                 title="Delete product"
                                             >
                                                 <Trash2 className="w-5 h-5" />
+                                            </button>
+                                            <button
+                                                onClick={() => navigate(`/products/${product.id}/details`)}
+                                                className="text-ikea-blue hover:text-blue-700 mr-3"
+                                            >
+                                                <Eye className="w-5 h-5" />
                                             </button>
                                         </div>
                                     </td>
