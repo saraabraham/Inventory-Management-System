@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5174/api'; // Update with your port
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5174/api';
 
 export interface Product {
     id: number;
