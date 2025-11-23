@@ -7,15 +7,11 @@ A full-stack inventory management system built with React, TypeScript, .NET 8, a
 
 - [Features](#features)
 - [Tech Stack](#tech-stack)
-- [Screenshots](#screenshots)
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
 - [API Documentation](#api-documentation)
 - [Key Features Explained](#key-features-explained)
-- [Future Enhancements](#future-enhancements)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+
 
 ## ✨ Features
 
@@ -58,24 +54,6 @@ A full-stack inventory management system built with React, TypeScript, .NET 8, a
 - **Git** - Version control
 - **VS Code / Visual Studio** - IDEs
 - **Postman** - API testing (optional)
-
-## 📸 Screenshots
-
-### Dashboard
-![Dashboard](docs/screenshots/dashboard.png)
-*Real-time inventory overview with key metrics and low-stock alerts*
-
-### Product List
-![Product List](docs/screenshots/products.png)
-*Searchable product catalog with inline stock adjustments*
-
-### Product Form
-![Product Form](docs/screenshots/product-form.png)
-*Easy-to-use form for adding and editing products*
-
-### Analytics
-![Analytics](docs/screenshots/analytics.png)
-*Visual charts showing inventory distribution and trends*
 
 ## 🚀 Getting Started
 
@@ -250,56 +228,6 @@ Smart algorithm that:
 - Downloadable as PNG images
 - Integrates with product details page
 
-## 🔮 Future Enhancements
-
-### Planned Features
-- [ ] User authentication with JWT tokens
-- [ ] Role-based access control (Admin, Manager, Viewer)
-- [ ] Multi-warehouse inventory management
-- [ ] Purchase order workflow
-- [ ] Sales order processing
-- [ ] Integration with barcode scanners
-- [ ] Email notifications for low stock
-- [ ] Mobile responsive design improvements
-- [ ] Dark mode support
-- [ ] Real-time updates with SignalR
-- [ ] Advanced analytics and forecasting
-- [ ] Supplier performance metrics
-
-### Technical Improvements
-- [ ] Add unit and integration tests
-- [ ] Implement caching with Redis
-- [ ] Add Docker support
-- [ ] CI/CD pipeline setup
-- [ ] Performance optimization
-- [ ] API rate limiting
-- [ ] Comprehensive error logging
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👤 Contact
-
-**Your Name** - Sara Abraham
-- Email: your.email@example.com
-- LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- Portfolio: [yourportfolio.com](https://yourportfolio.com)
-- GitHub: [@yourusername](https://github.com/yourusername)
-
-**Project Link**: [https://github.com/yourusername/ikea-inventory-system](https://github.com/yourusername/ikea-inventory-system)
-
----
 
 ## 🙏 Acknowledgments
 
