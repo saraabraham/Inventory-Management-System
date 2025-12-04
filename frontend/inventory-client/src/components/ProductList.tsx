@@ -123,7 +123,7 @@ const ProductList: React.FC = () => {
 
     const handleExport = async () => {
         try {
-            const response = await axios.get('http://localhost:5174/api/products/export', {
+            const response = await axios.get(`${process.env.REACT_APP_API_URL}/products/export`,{
                 responseType: 'blob'
             });
 
